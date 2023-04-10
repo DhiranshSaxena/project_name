@@ -1,0 +1,1693 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap" rel="stylesheet">');
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(back.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: sans-serif;
+}
+
+.box{
+
+ 
+    background: #f5f5f5;
+    color: red;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0097a7;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cookie-consent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #cookie-consent p {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  #cookie-consent button {
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  #learn-more-link {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    font-family: 'Spartan',sans-serif;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* SM - BANNER  */
+
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border:  1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+.section-p2{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 50px 0;
+}
+
+
+/* to make 2 icon to hide from big screen so that it show only in mobile size screen only  */
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+/* to remove the close icon from the  main webpage  */
+#close {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION BAR  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    background: rgb(37, 36, 36);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* to make the navbar stick to desktop while scrolling  */
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+/* To change horizontal from vartical of(home,about us , blog etc) */
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li{
+    list-style: none;
+    /* to give space btween home about us blog etc  */
+    padding:  0 20px;
+    /* to give style in font text  */
+    font-family: 'Bungee Spice', cursive;
+    /* because the underline was not showing in web page in right place that why we use this in parent element */
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    /* to set size of home aboutus blog etc  */
+    font-size: 16px;
+    /* kitna text mota chahiye for home blog ect  */
+    font-weight: 50;
+    /* color of the text */
+    color: #f5f2f2; 
+    transition: 0.4s ease;
+}
+
+/* to make home text in color active already if u are in that page  */
+#navbar li a:hover,
+#navbar li a.active{ 
+    color: aquamarine;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background: cadetblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* HERO SECTION  */
+
+#hero{
+    background-image: url("img/girlll.jpg");
+    height: 90vh;
+    width: 80%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    /* to make text adjustment and in center of the page  */
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  
+}
+
+/* to make text stylish to color the text etc  */
+
+#hero h4{
+    padding-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#hero h1{
+    color: rgb(228, 59, 29);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#hero h2{
+    font-size: 40px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+     
+}
+
+#hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: rgb(251, 14, 14);
+    border: 0;
+    padding: 14px 80px 14px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+/* FEATURE SECTION  */
+
+/* To make 5 free shipping in one horizontal line   */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 140px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 20px 20px 34px rgb(0,0,0,0.04);
+    border: 1px solid rgb(131, 125, 125);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover 
+{
+    box-shadow: 20px 20px 34px rgb(70,60,220,0.1);
+}
+
+
+#feature .fe-box img{
+    /* free shipping img ko centre me layega  */
+    width: 100%;
+    margin-bottom: 20px ;
+}
+
+#feature .fe-box h4
+ {   
+    /* To make padding equal from both side of text   */ 
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    background-color: pink;
+}
+/* #feature .fe-box :nth-child(2) h6 no space u cant write like this  */
+#feature .fe-box:nth-child(2) h4{
+    background-color: rgb(171, 215, 158);
+}
+
+#feature .fe-box:nth-child(3) h4{
+    background-color: rgb(195, 222, 105);
+}
+
+#feature .fe-box:nth-child(4) h4{
+    background-color: rgb(137, 193, 202);
+}
+
+#feature .fe-box:nth-child(5) h4{
+    background-color: rgb(222, 150, 113);
+}
+
+#feature .fe-box:nth-child(6)  h4{
+    background-color: rgb(124, 106, 160);
+}
+
+
+
+/* FEATURED PRODUCT SECTION  */
+
+#product1
+{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+ 
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px ;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 25%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    /* make the height or space of the text close to each other  */
+    line-height: 0;
+    /* make the cart logo on the right most side  */
+     
+    position: normal;
+
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 80%;
+    border-radius: 30px;
+}
+
+/* Move all the text in left side  */
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606060;
+    font-size: 20px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des .star span{
+    font-size: 18px;
+    color: rgb(233, 207, 5);
+}
+
+#product1 .pro .des h4{
+      padding-top: 7px ;
+      font-size: 15px;
+      font-weight: 700;
+      color: #088178;
+}
+
+/* 7 day tak problem me tha ho nahi raha tha par akhir hogaya 
+kese out of box thinking means simple tha but alag angle se soch */
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #aff92fb3;
+    font-weight: 500;
+    color: #237f79;
+    border: 2px solid #4e5372;
+    position: static;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+
+
+/* BANNER  */
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+
+}
+
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: red;
+}
+
+#banner button:hover {
+    background: #088178;
+    color: #fff;
+}
+
+
+
+
+/* SM BANNER  */ 
+/* CRAZY DEAL AND SPRING SUMMER  */
+
+#sm-banner{
+    /* make two poster in one row  */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+
+
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* make text on left side or at the start  */
+    align-items: flex-start;
+    background-image: url("img/banner/b17.jpg");
+    min-width:  504px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+
+
+
+
+/* 3 SMALL IMAGES  */
+
+/* give padding if 3 images does not come in one row  */
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* make text on left side or at the start  */
+    align-items: flex-start;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box2{
+    background-image: url("img/banner/b4.jpg");
+}
+
+#banner3 .banner-box3{
+    background-image: url("img/banner/b18.jpg");
+}
+
+#banner3 h2{
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#banner3 h3{
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+
+/* SIGN UP FOR NEWSLETTER  */
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+     
+    color: #eac005;
+}
+
+/* TO MAKE SIGN UP AND EMAIL BOX IN ONE ROW  */
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.12rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    /* TO REMOVE BORDER AREAS IN SIGN UP AND BRACKET  */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap ;
+}
+
+
+
+/* FOOTER  */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0  0 8px 0 ;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #888178;
+    border-radius: 6px;
+
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,footer a:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* RESPONSIVE WEBSITE  */
+
+@media (max-width: 799px){
+
+    #section-p2{
+        padding: 40px 40px;
+    }
+
+    #hero{
+        background-image: url("img/girlll.jpg");
+        height: 90vh;
+        width: 80.8%;
+      
+    }
+
+
+   #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #0d0e12;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+    padding: 80px 0 0 10px;
+/* This transition for mobile view of that navigation slide appear in transition effect  */
+    transition: 0.3s;
+   }
+
+
+   #navbar.active{
+    right: 0px;
+   }
+
+
+   #navbar li {
+    margin-bottom: 25px;
+   }
+
+   #mobile{
+    display: flex;
+    align-items: center;
+}
+
+/* to make some space bt 2 icon  and give colour to it */
+ #mobile i{
+    color:  white;
+    font-size: 24px;
+    padding-left: 20px;
+ }
+
+ /* for close button style  */
+ #close{
+    /* as we have remove close button from the main webpage therefor it diapear from all page to 
+     in slide navigation bar we use display initial  */
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+ }
+
+ #lg-bag{
+    /* to remove shopping bag in slide navigation bar  */
+    display: none;
+ }
+ /* to make hero section to display correctly on mobile phone  */
+ #hero {
+   height: 70vh;
+   padding: 0 80px;
+   background-position: top 30% right 30%;
+}
+
+#feature{
+    justify-content: center;
+}
+
+#feature .fe-box {
+     margin: 15px 15px;
+}
+
+#product1 .pro-container {
+     /* to remove space bt the 2 shirts icon  */
+    justify-content: center;   
+}
+
+/* to give space bt 2 shirt icon  */
+#product1 .pro {
+     margin: 15px;
+}
+
+
+#banner {
+    height: 25vh;
+}
+
+#sm-banner .banner-box{
+    min-width: 100%;
+    height: 30vh;
+}
+
+#banner3 {
+    padding: 0 20px;
+}
+
+#banner3 .banner-box {
+  width: 20%;
+}
+
+#newsletter .form {
+  
+    width: 80%;
+}
+
+}
+
+/* for the mobile phone  */
+
+
+
+
+
+
+/* SHOP PAGE  */
+
+#page-header{
+    background-image: url("img/banner/b1.jpg");
+    width: 97.7%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: #fff;
+    font-size: 150%;
+}
+
+
+#pagination{
+    text-align: center;
+}
+
+/* for 12 and arrow  */
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#prodetails{
+    display:flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#prodetails .single-pro-details h4{
+   padding: 20px 0 20px 0;
+}
+#prodetails .single-pro-details h6{
+   font-size: 18px;
+}
+#prodetails .single-pro-details h2{
+      font-size:  26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+
+#prodetails .single-pro-image{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+} 
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+  /* CONTACT PAGE  */
+
+
+/* TRANSITION - CARD    */
+
+ 
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/table.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 50%;
+    max-width: 300px;
+    color: rgb(246, 246, 246);
+    text-align: center;
+    pad: 50px 35px;
+    border: 1px solid rgba(43, 35, 26, 0.3);
+    /* card ka background-color set karenge  */
+    background: rgba(255, 255,  255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,  0, 0, 0.1);
+    backdrop-filter: blur(4px);
+     padding: 0px   4px;
+     /* to make space bt the  3 cards  */
+     margin-left: 30px;
+
+}
+
+.card img{
+    width: 140px;
+    border-radius: 50%;
+}
+
+.card h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.card p{
+    font-size: 14px;
+    margin: 10px auto;
+    max-width: 320px;
+}
+
+/* for social media icon  */
+.card .links img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+.card .links img:hover{
+    background: #ff01cf;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    background: #fff;
+    color: #ff01cf;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOG PAGE  */
+ /* dont write if same id has given earlier like this#page-header .blog-header 
+ write like this #page-header.blog-header */
+
+#page-header.blog-header {
+    background-image: url("img/banner/b19.jpg");
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+    
+
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* kyu ki position absolute use kiya blog box me  yad rakh parent and child */
+    position: normal;
+}
+
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+#blog .blog-details{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    /* to remove the slider from the bottom  */
+    /* yad kar parent and child element  */
+    position: relative;
+    transition: 0.3s;
+}
+
+/* to create a line after continue reading  */
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+
+}
+
+
+#blog .blog-details a:hover{
+    color: #088178;
+}
+
+/* to change the color of the line in continue reading  */
+#blog .blog-details a:hover::after{
+    background-color: #088178;
+}
+
+#blog .blog-box h1{
+    position: static;
+    top: -110px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    /* to make any item behind the image then use  z-index */
+    z-index: -9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE  */
+
+
+
+#page-header.about-header{
+    
+    background-image: url("img/about/banner.png");
+}
+
+
+#page-header.about-header h2{
+    font-size: 30px;
+
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+     width: 50%;
+     height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-app{
+    text-align: center;
+    
+}
+
+#about-app.video{
+    width: 50%;
+    height: 100%;
+    margin : 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* CART PAGE  */
+
+
+
+
+#page-header.cart-header{
+    
+    background-image: url("img/cartt.jpg");
+}
+
+/* 
+to make 3   table which were not fiting to the screen 
+it make 3 table a slider option using this one  */
+
+#cart{
+    overflow-x: auto;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+    table-layout: fixed;
+}
+
+#cart table img{
+    width: 70%;
+}
+
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 200px;
+    text-align: center;
+}
+#cart table td:nth-child(4){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(5),
+#cart table td:nth-child(6)
+{
+    width: 150px;
+    text-align: center;
+}
+ 
+#cart table td:nth-child(5) input{
+    width: 60px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 18px 0;
+}
+
+#cart table thead tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#coupon h3{
+    padding-bottom: 15px;
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 10%;
+    margin-right: 10px;
+    border: 1px solid rgb(14, 13, 13);
+}
+
+#coupon button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TO MAKE RESPONSIVE WEBSITE  */
+/* RESPONSIVE SHOULD BE AT LAST AND IT FOLLOW ORDER 
+ORDER MEANS  : #prodetails .single-pro-details DO bar a raha tah  */
+
+@media (max-width: 990px){
+    
+    #product1 .pro-container {
+        display: flex;
+        /* to make 2 icon in 1 row  */
+        justify-content: center;
+     }
+
+     #blog .blog-details{
+        width: 100%;
+    }
+
+    #blog{
+        padding: 100px 20px 0px 20px;
+    }
+
+    #blog .blog-img {
+        /* to make full image in screen  */
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+       /* blog img me margin bottom laga taki uske age space a jaye  */
+         margin-bottom: 30px;
+      }
+}
+
+
+
+
+
+
+
+    @media (max-width: 550px){
+        #hero{
+            background-image: url("img/girlll.jpg");
+            height: 90vh;
+            width: 79%;
+          
+        }
+    
+        .section-p2{
+            padding: 20px;
+        }
+        #header{
+            padding: 10px 20px;
+        }
+    
+        h1{
+            font-size: 38px;
+        }
+    
+        h2{
+            font-size: 32px;
+        }
+    
+        #hero {
+            padding: 0 40px;
+            background-position: 65%;
+        }
+    
+        #feature{
+            justify-content: space-between;
+        }
+        /* to make 2 icon in one row  */
+        #feature .fe-box {
+           width: 155px;
+           margin: 0 0 15px 0;
+        }
+    
+        /* 1 shirt 1 at a time in screen display  */
+        #product1 .pro {
+            width: 100%;
+           
+        }
+    
+        #banner {
+             height: 35vh;
+        }
+    
+        #sm-banner .banner-box {
+            height:40vh;
+           padding-right: 40px;
+        }
+    
+        #sm-banner .banner-box2 {
+            /* to have a space bt 2 banner orange and this  */
+             margin-top: 20px;
+        }
+    
+        #banner3{
+            padding: 0 20px;
+        }
+    
+        #banner3 .banner-box{
+            width: 100%;
+        }
+    
+        #newsletter .form {
+            width: 100%;
+        }
+    
+        #newsletter{
+            padding: 40px 20px;
+        }
+    
+        footer .copyright{
+            text-align: start;
+        }
+    
+        #prodetails{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #prodetails .single-pro-image {
+            width: 100%;
+             
+        }
+        #prodetails .single-pro-details {
+            width: 100%;
+            padding-top: 30px;
+        }
+
+
+
+        /* CONTACT US  */
+
+        .container{
+            width: 100%;
+            height: 120vh;
+            background-image: url(img/table.jpg);
+            background-position: center;
+            background-size: cover;
+            
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+
+
+
+        
+        .card{
+             
+             margin-bottom: 10px;
+             width: 70%;
+             flex-direction: column;
+        
+        }
+        
+        .card img{
+            width: 50px;
+            border-radius: 40%;
+        }
+        
+        .card h2{
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+        
+        }
+        
+        .card p{
+            font-size: 14px;
+            margin: 10px auto;
+            max-width: 320px;
+        }
+        
+        /* for social media icon  */
+        .card .links img{
+            width: 40px;
+            border-radius: 50%;
+            margin: 5px 5px;
+            transition: background 0.5s;
+        }
+        
+        .card .links img:hover{
+            background: #ff01cf;
+        }
+        
+        .btn{
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 500;
+            background: #fff;
+            color: #ff01cf;
+            padding: 10px 30px;
+            border-radius: 30px;
+            margin: 30px 0 10px;
+        }
+        
+
+        /*  BLOG PAGE */
+
+
+        #blog{
+            padding: 100px 20px 0 20px;
+        }
+
+        #blog .blog-img {
+            /* to make full image in screen  */
+            width: 100%;
+            margin-right: 40px;
+           /* blog img me margin bottom laga taki uske age space a jaye  */
+             margin-bottom: 30px;
+          }
+
+        #blog .blog-box {
+            display: flex;
+            flex-direction: column ;
+            align-items: flex-start;
+             }
+
+
+        #blog .blog-details{
+                width: 100%;
+            }
+
+
+
+
+            /* About us  */
+
+            /* both image and text para out of screen ja raha he toh tab use kar ye  */
+
+            #about-head{
+                flex-direction: column;
+            }
+
+            #about-head img {
+                width: 100%;
+                
+            }
+
+            #about-app .video video{
+                width: 90%;
+                height: 100%;
+                border-radius: 50px;
+            }
+
+             
+}
